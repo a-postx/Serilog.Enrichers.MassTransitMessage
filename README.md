@@ -46,7 +46,7 @@ public class Startup
 
 В результате получаем обогащённые события, если источником активности послужило сообщение из шины данных:
 
-https://github.com/a-postx/Serilog.Enrichers.MassTransitMessage/blob/master/result.png
+![alt text](https://github.com/a-postx/Serilog.Enrichers.MassTransitMessage/blob/master/result.png)
 
 ## About the project
 

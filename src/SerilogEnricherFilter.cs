@@ -11,7 +11,7 @@ namespace Serilog.Enrichers.MassTransitMessage
     {
         public void Probe(ProbeContext context)
         {
-            context.CreateFilterScope("SerilogEnricher");
+            context.CreateFilterScope("SerilogMessagePropertiesEnricher");
         }
         public async Task Send(T context, IPipe<T> next)
         {

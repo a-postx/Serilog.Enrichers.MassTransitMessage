@@ -15,7 +15,7 @@
     <OutputType>Library</OutputType>
     <StartupObject />
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Version>1.0.0-beta1</Version>
+    <Version>1.0.0-beta2</Version>
   </PropertyGroup>
 
   <ItemGroup>

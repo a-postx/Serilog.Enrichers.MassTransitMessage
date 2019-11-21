@@ -1,7 +1,5 @@
 ﻿using Serilog.Core;
 using Serilog.Events;
-using System.Linq;
-using System.Reflection;
 
 namespace Serilog.Enrichers.MassTransitMessage
 {
@@ -16,13 +14,17 @@ namespace Serilog.Enrichers.MassTransitMessage
 
             if (data != null)
             {
-                foreach (PropertyInfo prop in typeof(MessageBusMessageContext).GetProperties().ToList())
-                {
-                    if (prop != null && prop.CanRead)
-                    {
-                        logEvent.AddOrUpdateProperty(factory.CreateProperty(prop.Name, prop.GetValue(data), true));
-                    }
-                }
+                logEvent.AddPropertyIfAbsent(factory.CreateProperty(nameof(data.MessageBusMessageId), data.MessageBusMessageId?.ToString(), true));
+                logEvent.AddPropertyIfAbsent(factory.CreateProperty(nameof(data.MessageBusRequestId), data.MessageBusRequestId?.ToString(), true));
+                logEvent.AddPropertyIfAbsent(factory.CreateProperty(nameof(data.CorrelationId), data.CorrelationId?.ToString(), true));
+                logEvent.AddPropertyIfAbsent(factory.CreateProperty(nameof(data.MessageBusConversationId), data.MessageBusConversationId?.ToString(), true));
+                logEvent.AddPropertyIfAbsent(factory.CreateProperty(nameof(data.MessageBusInitiatorId), data.MessageBusInitiatorId?.ToString(), true));
+                logEvent.AddPropertyIfAbsent(factory.CreateProperty(nameof(data.MessageBusSourceAddress), data.MessageBusSourceAddress?.ToString(), true));
+                logEvent.AddPropertyIfAbsent(factory.CreateProperty(nameof(data.MessageBusDestinationAddress), data.MessageBusDestinationAddress?.ToString(), true));
+                logEvent.AddPropertyIfAbsent(factory.CreateProperty(nameof(data.MessageBusResponseAddress), data.MessageBusResponseAddress?.ToString(), true));
+                logEvent.AddPropertyIfAbsent(factory.CreateProperty(nameof(data.MessageBusFaultAddress), data.MessageBusFaultAddress?.ToString(), true));
+                logEvent.AddPropertyIfAbsent(factory.CreateProperty(nameof(data.MessageBusSentTime), data.MessageBusSentTime?.ToString(), true));
+                logEvent.AddPropertyIfAbsent(factory.CreateProperty(nameof(data.MessageBusExpirationTime), data.MessageBusExpirationTime?.ToString(), true));
             }
         }
     }

@@ -14,7 +14,7 @@ namespace MassTransit
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="configurator"></param>
-        public static void UseSerilogMessageEnricher<T>(this IPipeConfigurator<T> configurator) where T : class, PipeContext
+        public static void UseSerilogMtMessageEnricher<T>(this IPipeConfigurator<T> configurator) where T : class, PipeContext
         {
             if (configurator == null)
                 throw new ArgumentNullException(nameof(configurator));

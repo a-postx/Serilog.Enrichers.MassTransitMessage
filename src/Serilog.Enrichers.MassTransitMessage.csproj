@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <Description>Provides Serilog enrichment with parametrized data derived from MassTransit message.</Description>
+    <Authors>Jerome Haltom, Alexey Yakubin</Authors>
+    <Company>Jerome Haltom, Alexey Yakubin</Company>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageIconUrl>http://serilog.net/images/serilog-enricher-nuget.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/a-postx/Serilog.Enrichers.MassTransitMessage</PackageProjectUrl>
+    <AssemblyName>Serilog.Enrichers.MassTransitMessage</AssemblyName>
+    <RootNamespace>Serilog.Enrichers.MassTransitMessage</RootNamespace>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Version>1.0.0-beta1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="System.Collections.Immutable" Version="1.4.0" />
+    <PackageReference Include="MassTransit" Version="5.5.5" />
+  </ItemGroup>
+
+</Project>

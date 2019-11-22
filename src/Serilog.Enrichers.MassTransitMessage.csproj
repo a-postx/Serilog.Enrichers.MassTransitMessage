@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
-    <Description>Provides Serilog enrichment with parametrized data derived from MassTransit message.</Description>
+    <Description>Сериложный обогатитель для параметризированного логирования свойств сообщений МассТранзита.
+Serilog enricher for parametrized logging of MassTransit message properties.</Description>
     <Authors>Jerome Haltom, Alexey Yakubin</Authors>
     <Company>Jerome Haltom, Alexey Yakubin</Company>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
@@ -15,7 +16,7 @@
     <OutputType>Library</OutputType>
     <StartupObject />
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

@@ -1,6 +1,7 @@
 ﻿## О проекте
 
-Сериложный обогатитель для параметризированного логирования свойств сообщений МассТранзита. Пакет полезен при отладке микросервисных систем для лёгкого отслеживания активностей, источником которых послужило сообщение из шины данных.
+Сериложный обогатитель для параметризированного логирования свойств сообщений МассТранзита.
+Пакет предназначен для уменьшения боли при трассировке распределённых микросервисных систем - после настройки логи Серилога обогащаются свойствами, по которым можно легко отслеживать активности, источником которых послужило сообщение из шины данных МассТранзита.
 
 ## Использование
 
@@ -51,9 +52,10 @@ public class Startup
 ## Лицензия
 [MIT](https://github.com/a-postx/Pyhh/blob/master/LICENSE)
 
-## About the project
+## About
 
 Serilog enricher for parametrized logging of MassTransit message properties.
+Package reduces tracing pain in distributed microservice systems - once configured, Serilog events are enriched with extra properties that can easily be used for tracing when activity source is MassTransit message bus message.
 
 ## Usage
 

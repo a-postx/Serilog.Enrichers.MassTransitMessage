@@ -50,7 +50,7 @@ public class Startup
 ![alt text](https://github.com/a-postx/Serilog.Enrichers.MassTransitMessage/blob/master/result.png)
 
 ## Лицензия
-[MIT](https://github.com/a-postx/Pyhh/blob/master/LICENSE)
+[MIT](https://github.com/a-postx/Serilog.Enrichers.MassTransitMessage/blob/master/LICENSE)
 
 ## About
 
@@ -104,4 +104,4 @@ As a result we're getting events enriched with CorrelationId and other propertie
 ![alt text](https://github.com/a-postx/Serilog.Enrichers.MassTransitMessage/blob/master/result.png)
 
 ## License
-[MIT](https://github.com/a-postx/Pyhh/blob/master/LICENSE)
+[MIT](https://github.com/a-postx/Serilog.Enrichers.MassTransitMessage/blob/master/LICENSE)

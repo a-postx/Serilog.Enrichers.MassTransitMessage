@@ -16,7 +16,8 @@ Serilog enricher for parametrized logging of MassTransit message properties.</De
     <OutputType>Library</OutputType>
     <StartupObject />
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
+    <PackageTags>Serilog, MassTransit, RabbitMQ, ActiveMQ, Azure-Service-Bus, Amazon SQS/SNS, Elastic, ELK</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

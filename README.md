@@ -1,4 +1,4 @@
-﻿## О проекте
+## О проекте
 
 Сериложный обогатитель для параметризированного логирования свойств сообщений МассТранзита.
 Пакет предназначен для уменьшения боли при трассировке распределённых микросервисных систем - после настройки логи Серилога обогащаются свойствами, по которым можно легко отслеживать активности, источником которых послужило сообщение из шины данных МассТранзита.
@@ -48,6 +48,7 @@ public class Startup
 В результате получаем события с корреляционныи идентификатором и другими параметрами, которые легко привязать к контексту всего запроса:
 
 ![alt text](https://github.com/a-postx/Serilog.Enrichers.MassTransitMessage/blob/master/result.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fa-postx%2FSerilog.Enrichers.MassTransitMessage.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fa-postx%2FSerilog.Enrichers.MassTransitMessage?ref=badge_shield)
 
 ## Лицензия
 [MIT](https://github.com/a-postx/Serilog.Enrichers.MassTransitMessage/blob/master/LICENSE)
@@ -105,3 +106,5 @@ As a result we're getting events enriched with CorrelationId and other propertie
 
 ## License
 [MIT](https://github.com/a-postx/Serilog.Enrichers.MassTransitMessage/blob/master/LICENSE)
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fa-postx%2FSerilog.Enrichers.MassTransitMessage.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fa-postx%2FSerilog.Enrichers.MassTransitMessage?ref=badge_large)

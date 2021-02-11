@@ -1,7 +1,7 @@
 ﻿## О проекте
 
 Сериложный обогатитель для параметризированного логирования свойств сообщений МассТранзита.
-Пакет предназначен для уменьшения боли при трассировке распределённых микросервисных систем - после настройки логи Серилога обогащаются свойствами, по которым можно легко отслеживать активности, источником которых послужило сообщение из шины данных МассТранзита.
+Пакет предназначен для уменьшения боли при трассировке распределённых микросервисных систем. После настройки, логи Серилога станут обогащаться дополнительными свойствами, если источником активности послужило сообщение из шины данных МассТранзита.
 
 ## Использование
 
@@ -55,7 +55,7 @@ public class Startup
 ## About
 
 Serilog enricher for parametrized logging of MassTransit message properties.
-Package reduces tracing pain in distributed microservice systems - once configured, Serilog events are enriched with extra properties that can easily be used for tracing when activity source is MassTransit message bus message.
+Package reduces tracing pain in distributed microservice systems. Once configured, Serilog events will be enriched with extra properties in case the activity source is a MassTransit message bus message.
 
 ## Usage
 

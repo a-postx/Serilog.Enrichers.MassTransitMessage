@@ -24,7 +24,9 @@ namespace Serilog.Enrichers.MassTransitMessage
 
             // only return if at least one property set
             if (messageContext != null)
+            {
                 return messageContext;
+            } 
 
             return null;
         }
@@ -39,8 +41,11 @@ namespace Serilog.Enrichers.MassTransitMessage
             var context = pipe?.GetPayload<MessageContext>();
 
             if (context == null)
+            {
                 return null;
+            }
             else
+            {
                 return new MessageBusMessageContext
                 {
                     MessageBusConversationId = context.ConversationId,
@@ -55,6 +60,7 @@ namespace Serilog.Enrichers.MassTransitMessage
                     MessageBusSourceAddress = context.SourceAddress,
                     MessageBusSentTime = context.SentTime
                 };
+            }
         }
     }
 }

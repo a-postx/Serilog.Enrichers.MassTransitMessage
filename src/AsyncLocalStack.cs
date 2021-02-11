@@ -49,9 +49,12 @@ namespace Serilog.Enrichers.MassTransitMessage
         /// </summary>
         static void Pop()
         {
-            var currentContext = CurrentContext;
+            ImmutableStack<T> currentContext = CurrentContext;
+
             if (currentContext.IsEmpty == false)
+            {
                 CurrentContext = currentContext.Pop();
+            }
         }
 
         /// <summary>
@@ -60,11 +63,16 @@ namespace Serilog.Enrichers.MassTransitMessage
         /// <returns></returns>
         static T Peek()
         {
-            var currentContext = CurrentContext;
+            ImmutableStack<T> currentContext = CurrentContext;
+
             if (currentContext.IsEmpty == false)
+            {
                 return currentContext.Peek();
+            }
             else
+            {
                 return default(T);
+            }  
         }
 
         /// <summary>

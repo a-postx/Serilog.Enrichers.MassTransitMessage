@@ -18,7 +18,9 @@ namespace Serilog
         public static LoggerConfiguration FromMassTransitMessage(this LoggerEnrichmentConfiguration configuration)
         {
             if (configuration == null)
+            {
                 throw new ArgumentNullException(nameof(configuration));
+            }
 
             return configuration.With((ILogEventEnricher)new SerilogEnricher());
         }
